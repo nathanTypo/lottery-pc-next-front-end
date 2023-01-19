@@ -72,3 +72,11 @@ Easier Way
 -> Now let host on IPFS & Filecoin using Fleek
 go to -> https://fleek.co/
 we want to sign Up(with github) -> add new site-> only select repos(next lottery front end)
+
+After that deploy if any changes on your front end project
+# git add .
+# git commit -m "changes"
+# git push origin main
+
+go back to fleek(https://app.fleek.co/#/sites/empty-hill-4064/overview?accountId=f1feae2c-af74-451b-942a-a217247cba44) 
+and go to deploy you will see a new deployment
