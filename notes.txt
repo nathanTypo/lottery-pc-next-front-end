@@ -1,0 +1,74 @@
+//Notes from frontend
+// we show you the hard way first -> so you become familliar with what actually going on with components
+//then the easy way
+
+ReactJs mostly use in web3 now and NextJs is the future definitely master this -> https://nextjs.org/docs
+# yarn create next-app . (the "." means that we want our app in the current folder)
+//you can right away run it with
+# yarn run dev
+//add prettier
+# yarn add --dev prettier
+
+// React Libraries that makes web3 dev way easier for your frontEnd:
+Web3React
+wagmi
+react-moralis
+useDapp
+Web3Modal
+useMetamask
+
+//we are going to use react-moralis (npmjs.com/package/react-moralis)today
+yarn add react react-dom moralis-v1 react-moralis // since we already have react and react-dom, we just want to add :
+# yarn add moralis-v1 react-moralis // notice we dont add them as dev dependencies 
+//Nice ressource from w3school here: https://www.w3schools.com/react/default.asp
+https://reactjs.org/docs/hooks-overview.html
+https://reactjs.org/docs/hooks-effect.html
+https://blog.logrocket.com/guide-to-react-useeffect-hook/
+https://www.freecodecamp.org/news/react-context-for-beginners/
+
+17:06:29 summary of useEffect
+->with No dependency array it runs anytime anything changes(re-render) this is disastrous
+->with en´mpty dependency array it runs just once on load
+->if there are stuf in the array its gonna run anytime anything in the array changes
+
+
+
+17:11:00
+Manual way is done lets do it the cheaty way -> web3UIkit
+this a kit that already has the component build for us to use
+https://moralis.io/web3ui-kit-the-ultimate-web3-user-interface-kit/
+https://github.com/web3ui/web3uikit
+
+#yarn add web3uikit
+
+17:22:25 Introduction to calling functions in NextJs
+LotteryEntrance.js components
+how to call contract functions from https://github.com/MoralisWeb3/react-moralis#useweb3contract
+
+last 17:28:00
+
+18:05:33 installing tailwing css(styling) with NextJs https://tailwindcss.com/docs/guides/nextjs
+# yarn add --dev tailwindcss postcss autoprefixer
+//Now init tailwindcss
+# yarn tailwindcss init -p
+//Its generate for us two config files:
+postcss.config.js
+tailwind.config.js
+
+//we add PostCSS Language Support extension locally to our project
+
+18:13:30 Hosting on a decentralized way: IPFS
+we download and install ipfs desktop
+we get ipfs companion 
+
+we want to build the static version of our website cause ipfs only host it
+# yarn build
+# yarn next export // this will fail if you have any of that non static stuff(return a out folder->pure static code we can host)
+now we have our out folder we can go to ipfs and import the folder(out)
+we then want to pin it in our local node
+now you can click on share link then copy it and paste it on your browser boommm (Now note that was the Manual way)
+
+Easier Way
+-> Now let host on IPFS & Filecoin using Fleek
+go to -> https://fleek.co/
+we want to sign Up(with github) -> add new site
