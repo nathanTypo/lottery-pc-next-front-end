@@ -71,4 +71,4 @@ now you can click on share link then copy it and paste it on your browser boommm
 Easier Way
 -> Now let host on IPFS & Filecoin using Fleek
 go to -> https://fleek.co/
-we want to sign Up(with github) -> add new site
+we want to sign Up(with github) -> add new site-> only select repos(next lottery front end)
